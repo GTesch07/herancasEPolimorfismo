@@ -1,3 +1,5 @@
+package br.com.guilherme.tesch.models;
+
 public class Client {
     private String documment;
 

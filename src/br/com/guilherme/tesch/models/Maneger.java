@@ -1,3 +1,5 @@
+package br.com.guilherme.tesch.models;
+
 public non-sealed class Maneger extends Employee {
     private String login;
     private String password;

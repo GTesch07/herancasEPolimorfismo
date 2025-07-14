@@ -1,4 +1,9 @@
+package br.com.guilherme.tesch.main;
+
 import java.util.Scanner;
+
+import br.com.guilherme.tesch.models.Maneger;
+import br.com.guilherme.tesch.models.Salesman;
 
 public class Main {
     public static void main(String[] args) {

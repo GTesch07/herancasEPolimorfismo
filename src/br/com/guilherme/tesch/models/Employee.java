@@ -1,3 +1,5 @@
+package br.com.guilherme.tesch.models;
+
 public sealed abstract class Employee permits Salesman, Maneger {
     private String name;
     private String code;

@@ -1,3 +1,5 @@
+package br.com.guilherme.tesch.models;
+
 public non-sealed class Salesman extends Employee {
     private double percentPerSold;
 
