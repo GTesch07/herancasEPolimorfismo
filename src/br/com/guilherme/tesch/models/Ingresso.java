@@ -5,6 +5,12 @@ public class Ingresso {
     private String nameFilm;
     private String typeAudio;
 
+    public Ingresso(double valor, String nameFilm, String typeAudio) {
+        this.valor = valor;
+        this.nameFilm = nameFilm;
+        this.typeAudio = typeAudio;
+    }
+
     public double getValor() {
         return valor;
     }
@@ -29,4 +35,11 @@ public class Ingresso {
         this.typeAudio = typeAudio;
     }
 
+    public void imprimirDetalhes() {
+        System.out.printf("""
+                Filme: %s
+                Tipo de aúdio: %s
+                Valor real: %.2f
+                """, getNameFilm(), getTypeAudio(), getValor());
+    }
 }
