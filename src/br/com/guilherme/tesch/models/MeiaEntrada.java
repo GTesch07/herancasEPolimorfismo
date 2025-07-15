@@ -7,7 +7,7 @@ public class MeiaEntrada extends Ingresso {
     }
 
     @Override
-    public double getValor() {
+    public double getValorReal() {
         return getValor() / 2;
     }
 }

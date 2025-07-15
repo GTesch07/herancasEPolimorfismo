@@ -3,8 +3,9 @@ package br.com.guilherme.tesch.models;
 public class IngressoFamilia extends Ingresso {
     private int quantityPeeople;
 
-    public IngressoFamilia(double valor, String nameFilm, String typeAudio) {
+    public IngressoFamilia(double valor, String nameFilm, String typeAudio, int quantityPeeople) {
         super(valor, nameFilm, typeAudio);
+        this.quantityPeeople = quantityPeeople;
     }
 
     public int getQuantityPeeople() {
@@ -12,7 +13,7 @@ public class IngressoFamilia extends Ingresso {
     }
 
     @Override
-    public double getValor() {
+    public double getValorReal() {
         double total = getValor() * quantityPeeople;
         if (quantityPeeople > 3) {
             total *= 0.95;
