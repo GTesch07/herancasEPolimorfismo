@@ -4,10 +4,11 @@ public non-sealed class Salesman extends Employee {
     private double percentPerSold;
     private int quantitySold;
 
-    public Salesman(String name, String email, String password, int quantitySold) {
+    public Salesman(String name, String email, String password, int quantitySold, boolean administrator) {
         super.setName(name);
         super.setEmail(email);
         super.setPassword(password);
+        super.setAdministrator(administrator);
         this.quantitySold = quantitySold;
     }
 
@@ -27,6 +28,7 @@ public non-sealed class Salesman extends Employee {
         System.out.println("Name: " + super.getName());
         System.out.println("Email: " + super.getEmail());
         System.out.println("Password: " + super.getPassword());
+        System.out.println("Administrator: " + super.getAdministrator());
         System.out.println("Quantity Sold: " + quantitySold);
     }
 }

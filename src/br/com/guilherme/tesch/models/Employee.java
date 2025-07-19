@@ -1,6 +1,6 @@
 package br.com.guilherme.tesch.models;
 
-public sealed abstract class Employee permits Salesman, Maneger {
+public sealed abstract class Employee permits Salesman, Maneger, Attendant {
     private String name;
     private String email;
     private String password;
