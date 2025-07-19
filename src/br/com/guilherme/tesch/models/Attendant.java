@@ -14,4 +14,11 @@ public non-sealed class Attendant extends Employee {
     public double getCashValue() {
         return cashValue;
     }
+
+    public void imprimirDetalhes() {
+        System.out.println("\nName: " + super.getName());
+        System.out.println("Email: " + super.getEmail());
+        System.out.println("Password: " + super.getPassword());
+        System.out.println("Administrator: " + super.getAdministrator());
+    }
 }
