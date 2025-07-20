@@ -1,14 +1,11 @@
 package br.com.guilherme.tesch.main;
 
-import java.util.Scanner;
-
 import br.com.guilherme.tesch.models.Attendant;
 import br.com.guilherme.tesch.models.Maneger;
 import br.com.guilherme.tesch.models.Salesman;
 
 public class Main {
     public static void main(String[] args) {
-        var scanner = new Scanner(System.in);
         Maneger maneger = new Maneger("Guilherme da Silva Tesch", "tesch.guilherme@hotmail.com", "guilherme_tesch",
                 "123455");
         Salesman salesman = new Salesman("Monica Tesch", "monica@tesch.com", "12342", 8);
